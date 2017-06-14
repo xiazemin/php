@@ -70,7 +70,15 @@ Zend Module Api No:      20151012
 
 Zend Extension Api No:   320151012
 
+$ ls
 
+CREDITS		aclocal.m4	config.h.in	configure	missing		test.c
+
+EXPERIMENTAL	autom4te.cache	config.m4	configure.in	mkinstalldirs	test.php
+
+Makefile.global	build		config.sub	install-sh	php\_test.h	tests
+
+acinclude.m4	config.guess	config.w32	ltmain.sh	run-tests.php
 
 1. 执行命令：./configure --with-php-config=/Applications/XAMPP/xamppfiles/bin/php-config
 
