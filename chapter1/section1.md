@@ -106,7 +106,11 @@ Installing shared extensions:     /usr/local/Cellar/php70/7.0.15\_8/lib/php/exte
 
 1. 修改php.ini文件（路径：/Applications/XAMPP/xamppfiles/etc/php.ini）
 
-2. 重启apache，依次执行一下命令：
+ vi /usr/local/etc/php/7.0/php.ini
+
+extension=test.so
+
+1. 重启apache，依次执行一下命令：
 
 sudo /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh stop
 
