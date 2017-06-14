@@ -72,23 +72,35 @@ Zend Extension Api No:   320151012
 
 $ ls
 
-CREDITS		aclocal.m4	config.h.in	configure	missing		test.c
+CREDITS        aclocal.m4    config.h.in    configure    missing        test.c
 
-EXPERIMENTAL	autom4te.cache	config.m4	configure.in	mkinstalldirs	test.php
+EXPERIMENTAL    autom4te.cache    config.m4    configure.in    mkinstalldirs    test.php
 
-Makefile.global	build		config.sub	install-sh	php\_test.h	tests
+Makefile.global    build        config.sub    install-sh    php\_test.h    tests
 
-acinclude.m4	config.guess	config.w32	ltmain.sh	run-tests.php
+acinclude.m4    config.guess    config.w32    ltmain.sh    run-tests.php
 
 1. 执行命令：./configure --with-php-config=/Applications/XAMPP/xamppfiles/bin/php-config
 
-2. 执行命令: make编译扩展
+$ ./configure
 
-3. 执行命令：sudo make install 安装扩展
+checking for grep that handles long lines and -e... /usr/bin/grep
 
-4. 修改php.ini文件（路径：/Applications/XAMPP/xamppfiles/etc/php.ini）
+checking for egrep... /usr/bin/grep -E
 
-5. 重启apache，依次执行一下命令：
+checking for a sed that does not truncate output... /usr/bin/sed
+
+checking for cc... cc
+
+checking whether the C compiler works... yes
+
+1. 执行命令: make编译扩展
+
+2. 执行命令：sudo make install 安装扩展
+
+3. 修改php.ini文件（路径：/Applications/XAMPP/xamppfiles/etc/php.ini）
+
+4. 重启apache，依次执行一下命令：
 
 sudo /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh stop
 
