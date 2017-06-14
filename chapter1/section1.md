@@ -10,29 +10,23 @@ Creating directory test
 
 Creating basic files: config.m4 config.w32 .gitignore test.c php\_test.h CREDITS EXPERIMENTAL tests/001.phpt test.php \[done\].
 
-
-
 To use your new extension, you will have to execute the following steps:
 
+1. $ cd ..
 
+2. $ vi ext/test/config.m4
 
-1.  $ cd ..
+3. $ ./buildconf
 
-2.  $ vi ext/test/config.m4
+4. $ ./configure --\[with\|enable\]-test
 
-3.  $ ./buildconf
+5. $ make
 
-4.  $ ./configure --\[with\|enable\]-test
+6. $ ./sapi/cli/php -f ext/test/test.php
 
-5.  $ make
+7. $ vi ext/test/test.c
 
-6.  $ ./sapi/cli/php -f ext/test/test.php
-
-7.  $ vi ext/test/test.c
-
-8.  $ make
-
-
+8. $ make
 
 Repeat steps 3-6 until you are satisfied with ext/test/config.m4 and
 
@@ -41,6 +35,12 @@ step 6 confirms that your module is compiled into PHP. Then, start writing
 code and repeat the last two steps as often as necessary.
 
 1. 进入test目录，编辑config.m4文件
+
+$ ls
+
+CREDITS		config.m4	php\_test.h	test.php
+
+EXPERIMENTAL	config.w32	test.c		tests
 
 将如下行的注释标签"dnl"去掉，修改后如下所示：
 
