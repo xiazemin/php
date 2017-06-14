@@ -100,9 +100,13 @@ checking whether the C compiler works... yes
 
 3. 执行命令：sudo make install 安装扩展
 
-4. 修改php.ini文件（路径：/Applications/XAMPP/xamppfiles/etc/php.ini）
+$ make install
 
-5. 重启apache，依次执行一下命令：
+Installing shared extensions:     /usr/local/Cellar/php70/7.0.15\_8/lib/php/extensions/no-debug-non-zts-20151012/
+
+1. 修改php.ini文件（路径：/Applications/XAMPP/xamppfiles/etc/php.ini）
+
+2. 重启apache，依次执行一下命令：
 
 sudo /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh stop
 
