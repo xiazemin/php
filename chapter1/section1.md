@@ -96,11 +96,13 @@ checking whether the C compiler works... yes
 
 1. 执行命令: make编译扩展
 
-2. 执行命令：sudo make install 安装扩展
+2. make test
 
-3. 修改php.ini文件（路径：/Applications/XAMPP/xamppfiles/etc/php.ini）
+3. 执行命令：sudo make install 安装扩展
 
-4. 重启apache，依次执行一下命令：
+4. 修改php.ini文件（路径：/Applications/XAMPP/xamppfiles/etc/php.ini）
+
+5. 重启apache，依次执行一下命令：
 
 sudo /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh stop
 
