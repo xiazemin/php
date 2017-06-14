@@ -60,15 +60,27 @@ Make sure that the comment is aligned:
 
 1. 使用phpize生成configure文件（phpize路径为：/Applications/XAMPP/xamppfiles/bin/phpize）
 
-2. 执行命令：./configure --with-php-config=/Applications/XAMPP/xamppfiles/bin/php-config
+$ phpize
 
-3. 执行命令: make编译扩展
+Configuring for:
 
-4. 执行命令：sudo make install 安装扩展
+PHP Api Version:         20151012
 
-5. 修改php.ini文件（路径：/Applications/XAMPP/xamppfiles/etc/php.ini）
+Zend Module Api No:      20151012
 
-6. 重启apache，依次执行一下命令：
+Zend Extension Api No:   320151012
+
+
+
+1. 执行命令：./configure --with-php-config=/Applications/XAMPP/xamppfiles/bin/php-config
+
+2. 执行命令: make编译扩展
+
+3. 执行命令：sudo make install 安装扩展
+
+4. 修改php.ini文件（路径：/Applications/XAMPP/xamppfiles/etc/php.ini）
+
+5. 重启apache，依次执行一下命令：
 
 sudo /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh stop
 
