@@ -42,15 +42,11 @@ CREDITS        config.m4    php\_test.h    test.php
 
 EXPERIMENTAL    config.w32    test.c        tests
 
-将如下行的注释标签"dnl"去掉，
+$ vi config.m4将如下行的注释标签"dnl"去掉，
 
 ~~dnl~~ PHP\_ARG\_ENABLE\(test, whether to enable test support,
 
-
-
 ~~dnl~~ Make sure that the comment is aligned:
-
-
 
 ~~dnl~~ \[ --enable-test Enable test support\]\)
 
