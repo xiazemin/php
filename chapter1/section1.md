@@ -120,3 +120,7 @@ sudo /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh stop
 
 sudo /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh start
 
+$ /usr/local/sbin/php70-fpm  start
+
+![](/assets/importext.png)
+
