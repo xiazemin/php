@@ -108,6 +108,8 @@ Installing shared extensions:     /usr/local/Cellar/php70/7.0.15\_8/lib/php/exte
 
    vi /usr/local/etc/php/7.0/php.ini
 
+extension\_dir = "/usr/local/Cellar/php70/7.0.15\_8/lib/php/extensions/no-debug-non-zts-20151012/"
+
 extension=test.so
 
 1. 重启apache，$ sudo nginx  -s  reopen -c /usr/local/etc/nginx/nginx.conf
@@ -117,6 +119,4 @@ extension=test.so
 sudo /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh stop
 
 sudo /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh start
-
-
 
