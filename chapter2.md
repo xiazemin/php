@@ -30,7 +30,9 @@ $ make install
 
 Installing shared extensions:     /usr/local/Cellar/php70/7.0.15\_8/lib/php/extensions/no-debug-non-zts-20151012/
 
-6）添加ext-vld.ini配置文件
+6）添加ext-vld .ini配置文件
+
+extension=vld.so
 
 7）重启fpm
 
