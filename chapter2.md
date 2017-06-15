@@ -36,7 +36,11 @@ extension=vld.so
 
 7）重启fpm
 
+/usr/local/sbin/php70-fpm restart
+
 8）PHP -m \| grep vld 查看扩展
+
+![](/assets/importvld.png)
 
 9）php -dvld.active test.php 测试vld扩展
 
