@@ -60,3 +60,5 @@ return 0; }
 
 变量 yytext 是指向所匹配的字符串的指针\(以 NULL 结尾\),而 yyleng 是这个字符串的长度。变量yyout 是输出文件,默认状态下是 stdout。当 lex 读完输入文件之后就会调用函数 yywrap。如果返回 1 表示程序的工作已经完成了,否则返回 0。每一个 C 程序都要求一个 main 函数。在本例中我们只 是简单地调用 yylex,lex 扫描器的入口。有些 lex 实现的库中包含了 main 和 yywrap。这就是为什 么我们的第一个例子,最短的 lex 程序,能够正确运行。
 
+![](/assets/importlex.png)
+
