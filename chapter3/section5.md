@@ -1,2 +1,32 @@
 # section5
 
+$ lex ch1-02.l
+
+$ gcc lex.yy.c -o verb.exe
+
+Undefined symbols for architecture x86\_64:
+
+  "\_yywrap", referenced from:
+
+      \_yylex in lex-e33b10.o
+
+ld: symbol\(s\) not found for architecture x86\_64
+
+clang: error: linker command failed with exit code 1 \(use -v to see invocation\)
+
+可以在lex.c加入如下的行来解决问题。
+
+\#define yywrap\(\)  1
+
+
+
+更好的办法是定义:
+
+int yywrap\(\) 
+
+{ 
+
+   return\(1\); 
+
+} 
+
