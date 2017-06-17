@@ -1,4 +1,4 @@
-# section5
+# lex实践
 
 $ lex ch1-02.l
 
@@ -59,6 +59,4 @@ ECHO输出匹配的模式
 任意合法的c代码，lex将它复制到c文件
 
 产生的c例程名字叫yylex（），生成文件名叫yy.lex.c
-
-
 
