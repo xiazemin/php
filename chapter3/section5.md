@@ -6,9 +6,11 @@ $ gcc lex.yy.c -o verb.exe
 
 Undefined symbols for architecture x86\_64:
 
-  "\_yywrap", referenced from:
+"\_yywrap", referenced from:
 
-      \_yylex in lex-e33b10.o
+```
+  \_yylex in lex-e33b10.o
+```
 
 ld: symbol\(s\) not found for architecture x86\_64
 
@@ -18,15 +20,23 @@ clang: error: linker command failed with exit code 1 \(use -v to see invocation\
 
 \#define yywrap\(\)  1
 
-
-
 更好的办法是定义:
 
-int yywrap\(\) 
+int yywrap\(\)
 
-{ 
+{
 
-   return\(1\); 
+return\(1\);
 
-} 
+}
+
+$ ls
+
+ch1-02.l	lex.yy.c	verb.exe
+
+lex将%{%}之间的代码直接拷贝到生成的c代码中
+
+lex用空白缩进表示注释
+
+
 
