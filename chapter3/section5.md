@@ -32,11 +32,17 @@ return\(1\);
 
 $ ls
 
-ch1-02.l	lex.yy.c	verb.exe
+ch1-02.l    lex.yy.c    verb.exe
+
+定义段
 
 lex将%{%}之间的代码直接拷贝到生成的c代码中
 
 lex用空白缩进表示注释
+
+规则段
+
+每条规则由模式和动作组成，中间空格分开
 
 
 
