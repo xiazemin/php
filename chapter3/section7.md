@@ -58,7 +58,23 @@ switch\(lookupWord\(yytext\)\){
 
 函数没有加声明，加上就好了
 
+$ cc -c lex.yy.c y.tab.c
 
+y.tab.c:1231:16: warning: implicit declaration of function 'yylex'
+
+      is invalid in C99 \[-Wimplicit-function-declaration\]
+
+      yychar = YYLEX;
+
+               ^
+
+y.tab.c:587:16: note: expanded from macro 'YYLEX'
+
+\# define YYLEX yylex \(\)
+
+               ^
+
+1 warning generated.
 
 
 
