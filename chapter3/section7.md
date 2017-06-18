@@ -62,19 +62,49 @@ $ cc -c lex.yy.c y.tab.c
 
 y.tab.c:1231:16: warning: implicit declaration of function 'yylex'
 
-      is invalid in C99 \[-Wimplicit-function-declaration\]
+```
+  is invalid in C99 \[-Wimplicit-function-declaration\]
 
-      yychar = YYLEX;
+  yychar = YYLEX;
 
-               ^
+           ^
+```
 
 y.tab.c:587:16: note: expanded from macro 'YYLEX'
 
 \# define YYLEX yylex \(\)
 
-               ^
+```
+           ^
+```
 
 1 warning generated.
 
+$ cc -o sentense.exe lex.yy.o y.tab.o -ll -v
 
+Apple LLVM version 7.3.0 \(clang-703.0.31\)
+
+duplicate symbol \_main in:
+
+    lex.yy.o
+
+    y.tab.o
+
+ld: 1 duplicate symbol for architecture x86\_64
+
+clang: error: linker command failed with exit code 1 \(use -v to see invocation\)
+
+原因：lex中多定义了一个main函数，注视掉即可
+
+$ cc -o sentense.exe lex.yy.o y.tab.o -ll -v
+
+Apple LLVM version 7.3.0 \(clang-703.0.31\)
+
+Target: x86\_64-apple-darwin15.0.0
+
+Thread model: posix
+
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86\_64 -macosx\_version\_min 10.11.0 -o sentense.exe lex.yy.o y.tab.o -ll -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.3.0/lib/darwin/libclang\_rt.osx.a
 
