@@ -22,7 +22,9 @@ $ cc -c lex.yy.c y.tab.c
 
 ch1-05.l:21:8: error: use of undeclared identifier 'PRONOUN'; did
 
-      you mean 'PRNOUN'?
+```
+  you mean 'PRNOUN'?
+```
 
 {state=PRONOUN;}
 
@@ -30,7 +32,9 @@ $ cc -c lex.yy.c y.tab.c
 
 ch1-05.l:26:1: warning: implicit declaration of function 'addWord'
 
-      is invalid in C99 \[-Wimplicit-function-declaration\]
+```
+  is invalid in C99 \[-Wimplicit-function-declaration\]
+```
 
 addWord\(state,yytext\);
 
@@ -38,13 +42,23 @@ addWord\(state,yytext\);
 
 ch1-05.l:28:8: warning: implicit declaration of function
 
-      'lookupWord' is invalid in C99
+```
+  'lookupWord' is invalid in C99
 
-      \[-Wimplicit-function-declaration\]
+  \[-Wimplicit-function-declaration\]
+```
 
 switch\(lookupWord\(yytext\)\){
 
-       ^
+```
+   ^
+```
 
 2 warnings generated.
+
+函数没有加声明，加上就好了
+
+
+
+
 
